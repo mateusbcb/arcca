@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    '' => array($vendorDir . '/arcca/php-classes/src'),
+    'Arcca\\' => array($vendorDir . '/arcca/php-classes-arcca/src'),
 );

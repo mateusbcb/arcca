@@ -4,10 +4,20 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc7056303f717509c485bee2114e79ba3
+class ComposerStaticInit636eb6d6d0fe5f36d182945e694db284
 {
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/arcca/php-classes/src',
+    public static $prefixLengthsPsr4 = array (
+        'A' => 
+        array (
+            'Arcca\\' => 6,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Arcca\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/arcca/php-classes-arcca/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -41,9 +51,10 @@ class ComposerStaticInitc7056303f717509c485bee2114e79ba3
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->fallbackDirsPsr4 = ComposerStaticInitc7056303f717509c485bee2114e79ba3::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitc7056303f717509c485bee2114e79ba3::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitc7056303f717509c485bee2114e79ba3::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit636eb6d6d0fe5f36d182945e694db284::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit636eb6d6d0fe5f36d182945e694db284::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit636eb6d6d0fe5f36d182945e694db284::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit636eb6d6d0fe5f36d182945e694db284::$classMap;
 
         }, null, ClassLoader::class);
     }

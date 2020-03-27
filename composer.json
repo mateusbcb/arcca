@@ -1,5 +1,11 @@
 {
-    "name": "mateusbcb/arcca",
+    "name": "mateusbcb/php-classes-arcca",
+    "authors": [
+        {
+            "name": "Arcca",
+            "email": "suporte@arcca.com.br"
+        }
+    ],
     "require": {
     	"phpmailer/phpmailer":"5.2.22",
     	"slim/slim":"2.0",
@@ -7,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "": "vendor\\arcca\\php-classes\\src"
+            "Arcca\\": "vendor\\arcca\\php-classes-arcca\\src"
         }
     }
 }
